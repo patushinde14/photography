@@ -1,0 +1,106 @@
+@media (min-width: 320px) and (max-width: 575.98px) { 
+    .navbar-toggler  {
+        color: white;
+        font-size: 25px;
+        border: 0;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-nav.ms-auto.mb-2.mb-lg-0 {
+        margin-top: 20px;
+    }
+    .navbar .nav-item {
+        margin-left: 0;
+        background: white;
+        text-align: center;
+    }
+    .navbar .nav-item .nav-link {
+        margin-bottom: 40px;
+        background: black;
+    }
+    #about .tittel_2 h2 {
+        font-size: 16px;
+    }
+    #about .service-crad .service-img {
+        width: auto;
+    }
+    #about .service-crad .service-img .service-text p {
+        width: auto;
+    }
+    #jornul .jornul-card .jornul-item {
+        width: auto;
+    }
+    #jornul .jornul-card .jornul-item .bottom-text i {
+        margin-left: 100px;
+    }
+    #service .left .about-service {
+        display: flex;
+        flex-direction: column;
+    }
+    #service .left .about-service .service-img img {
+        width: 100%;
+    }
+    #service .left .about-service .service-text {
+        margin: 10px 0 10px;
+    }
+    #service .left .about-service .service-text h2 {
+        margin-bottom: 20px;
+    }
+    #service .right .service-item .text p {
+        width: auto;
+    }
+ }
+@media (min-width: 575.98px) and (max-width: 767.98px) { 
+    .navbar-toggler  {
+        color: white;
+        font-size: 25px;
+        border: 0;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-nav.ms-auto.mb-2.mb-lg-0 {
+        margin-top: 20px;
+    }
+    .navbar .nav-item {
+        margin-left: 0;
+        background: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .navbar .nav-item .nav-link {
+        margin-bottom: 40px;
+        background: black;
+    }
+    #about .tittel_2 h2 {
+        font-size: 16px;
+    }
+    #about .service-crad .service-img {
+        width: auto;
+    }
+    #about .service-crad .service-img .service-text p {
+        width: auto;
+    }
+    #jornul .jornul-card .jornul-item {
+        width: auto;
+    }
+    #jornul .jornul-card .jornul-item .bottom-text i {
+        margin-left: 540px;
+    }
+    #service .left .about-service {
+        display: flex;
+        flex-direction: column;
+    }
+    #service .left .about-service .service-img img {
+        width: 100%;
+    }
+    #service .left .about-service .service-text {
+        margin: 10px 0 10px;
+    }
+    #service .left .about-service .service-text h2 {
+        margin-bottom: 20px;
+    }
+    #service .right .service-item .text p {
+        width: auto;
+    }
+ }

@@ -1,0 +1,591 @@
+/* ========== Google Fonts Link ========== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@100;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* ========== Global Css Star ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0;
+}
+
+ol,ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #444444;
+}
+
+h1,h2,h3,
+h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.tittel {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+/* ========== Back To Top Part CSS Start ========== */
+#button {
+    display: inline-block;
+    background-color: #ff9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+  
+/* Styles for the content section */
+  
+.content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: "Merriweather", serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+}
+
+@media (min-width: 500px) {
+    .content {
+      width: 43%;
+    }
+    #button {
+      margin: 30px;
+    }
+}
+
+.content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+}
+
+.content h3 {
+    font-style: italic;
+    color: #96a2a7;
+}
+/* ========== Back To Top Part CSS Start ========== */
+
+/* ========== Navbar part Start ========== */
+.navbar {
+    width: 100%;
+    padding: 33px 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0, .4);
+    z-index: 99999;
+}
+
+
+
+.navbar .nav-item {
+    margin-left: 44px;
+}
+
+.navbar .nav-item .active {
+    color: #28b8d8 !important;
+}
+
+.navbar .nav-item .nav-link {
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    color: #f5f5f5;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #28b8d8;
+}
+/* ========== Navbar part End ========== */
+
+/* ========== Banner part Start ========== */
+#home .banner-img {
+    position: relative;
+    background: url(../image/Banner.jpeg) no-repeat center;
+    background-size: cover;
+    padding: 300px 0 250px;
+}
+
+#home .banner-img .banner-text {
+    text-align: center;
+}
+#home .banner-img .banner-text h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+#home .banner-img .banner-text h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #fff;
+    margin: 20px 0;
+}
+#home .banner-img .banner-text p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+/* ========== Banner part End ========== */
+
+/* ========== About part Start ========== */
+#about {
+    padding: 83px 0;
+}
+
+#about .tittel h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+}
+
+#about .tittel p {
+    margin: 30px 0 80px;
+}
+
+#about .tittel_2 h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about .service-crad {
+    padding: 0;
+}
+
+#about .service-crad .service-img {
+    width: 370px;
+    border: 1px solid #e3e3e3;
+    padding: 16px 16px 24px 16px;
+}
+
+#about .service-crad .service-img .service-text {
+    padding: 0 31px;
+    text-align: center;
+}
+
+#about .service-crad .service-img .service-text h3 {
+    margin: 25px 0 14px;
+}
+
+#about .service-crad .service-img .service-text p {
+    width: 300px;
+}
+/* ========== About part End ========== */
+
+/* ========== Portfolio part Start ========== */
+#portfolio .tittel {
+    background: #2c2c2c;
+    padding: 50px 0;
+}
+
+#portfolio .tittel h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #d5d5d5;
+    position: relative;
+    display: inline-block;
+}
+#portfolio .portfolio-img {
+    display: flex;
+}
+
+#portfolio .tittel h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #535353;
+    top: 50%;
+    left: -115px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#portfolio .tittel h2::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #535353;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#portfolio .portfolio-img img {
+    width: 20%;
+}
+
+#portfolio .tittel .insta-page {
+    display: inline-block;
+    border: 1px solid #535353;
+    padding: 19px 21px;
+}
+
+#portfolio .tittel .insta-page .icon {
+    display: flex;
+}
+#portfolio .tittel .insta-page .icon i {
+    font-size: 20px;
+    color: #a6a6a6;
+    margin-right: 6px;
+}
+#portfolio .tittel .insta-page .icon p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+/* ========== Portfolio part End ========== */
+
+/* ========== Jornul part Start ========== */
+#jornul {
+    padding: 74px 0 70px;
+}
+#jornul .tittel h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    position: relative;
+    display: inline-block;
+}
+
+#jornul .tittel h2::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #d9d9d9;
+    top: 50%;
+    left: -115px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#jornul .tittel h2::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #d9d9d9;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#jornul .jornul-card {
+    margin-top: 30px;
+}
+
+#jornul .jornul-card .jornul-item {
+    width: 370px;
+    border: 1px solid #d5d5d5;
+    padding: 26px 0 31px;
+}
+
+#jornul .jornul-card .jornul-item .top-text h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    text-align: center;
+}
+
+#jornul .jornul-card .jornul-item .top-text p {
+    text-align: center;
+    margin: 15px 0 21px;
+}
+
+#jornul .jornul-card .jornul-item .bottom-text {
+    padding: 0 26px;
+}
+
+#jornul .jornul-card .jornul-item .bottom-text p {
+    margin: 28px 0 25px;
+}
+
+#jornul .jornul-card .jornul-item .bottom-text a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    position: relative;
+    transition: all .4s linear ;
+    -webkit-transition: all .4s linear ;
+    -moz-transition: all .4s linear ;
+    -ms-transition: all .4s linear ;
+    -o-transition: all .4s linear ;
+}
+
+#jornul .jornul-card .jornul-item .bottom-text a::after {
+    position: absolute;
+    content: '';
+    width: 104px;
+    height: 1px;
+    background-color: #28b8d8;
+    top: 100%;
+    right: 5%;
+    transform: translateY(-5%);
+    -webkit-transform: translateY(-5%);
+    -moz-transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    -o-transform: translateY(-5%);
+}
+
+#jornul .jornul-card .jornul-item .bottom-text i {
+    margin-left: 160px;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+#jornul .jornul-card .jornul-item .bottom-text i:hover {
+    color: pink;
+}
+/* ========== Jornul part End ========== */
+
+/* ========== Service part Start ========== */
+#service .left .left-tittel h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+#service .left .left-tittel h2::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #d9d9d9;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#service .left .about-service {
+    display: flex;
+}
+
+#service .left .about-service .service-img img {
+    width: 240px;
+    height: 280px;
+}
+
+#service .left .about-service .service-text {
+    margin-left: 26px;
+}
+
+#service .left .about-service .service-text h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 26px;
+}
+
+#service .right .right-tittel h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+#service .right .right-tittel h2::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #d9d9d9;
+    top: 50%;
+    right: -115px;
+    position: absolute;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#service .right .service-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#service .right .service-item .text {
+    margin-left: 26px;
+}
+
+#service .right .service-item .text h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+#service .right .service-item .text p {
+    width: 445px;
+}
+/* ========== Service part End ========== */
+
+/* ========== Contact part Start ========== */
+#contact {
+    padding-top: 80px;
+}
+
+#contact .main {
+    width: 100%;
+    background: #373737;
+    padding: 67px 0;
+}
+
+#contact .main .Contact-tittel h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #f0f0f0;
+}
+
+#contact .main .Contact-tittel p {
+    color: #cacaca;
+    margin: 26px 0 36px;
+}
+
+#contact .main .first .first-adderes {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+#contact .main .first .first-adderes .icon {
+    margin-right: 18px;
+}
+
+#contact .main .first .first-adderes .icon i {
+    color: #cacaca;
+}
+
+#contact .main .first .first-adderes .text a {
+    width: 177px;
+    color: #cacaca;
+}
+
+#contact .main .first .first-adderes .text a:hover {
+    color: #46c5ff;
+}
+/* ========== Contact part End ========== */
+
+/* ========== Footer part Star ========== */
+footer .main {
+    width: 100%;
+    background: #333333;
+}
+
+footer .main p {
+    color: #cacaca;
+    padding: 40px 0;
+}
+/* ========== Footer part End ========== */
+
+
