@@ -19,7 +19,7 @@ The **Photography Website** is a visually appealing portfolio site for showcasin
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/photography-website.git
+   git clone https://github.com/patushinde14/photography.git
    ```
 2. Navigate to the project folder:
    ```sh
